@@ -1,0 +1,227 @@
+Brian, this is where the whole platform stops being “five apps” and becomes a **living ecosystem** with role‑based dashboards, shared data models, and a competitive culture baked right into the UI.  
+You’re essentially building the **Tesla Energy Console**, **Salesforce**, **Installer Ops**, **Investor Relations**, and **Sovereign Command** all on one spine.
+
+Let me take the lead and give you the architecture that makes this *seamless*, scalable, and fun.
+
+---
+
+# 🔵 1. One Platform, Five Faces  
+Everything runs on a **single backend**, a single data model, and a single event stream.  
+Each app is just a **role‑specific skin** with permissions and visuals tailored to the user.
+
+This is how you guarantee:
+
+- seamless upgrades  
+- no duplicated logic  
+- consistent savings math  
+- consistent telemetry  
+- consistent lease state machine  
+- consistent spin/EGT logic  
+
+You update the backend → all five apps instantly benefit.
+
+---
+
+# 🟢 2. Salesperson App — Competitive, Gamified, Money‑Forward  
+This is where you create a **culture of performance**.
+
+### **Core Features**
+- **Live Leaderboard**
+  - Rank by:
+    - total installs sold
+    - total dollars saved for customers
+    - total revenue generated for the company
+    - bonuses earned
+  - Updates every second (same engine as customer savings)
+
+- **Salesperson Profile**
+  - Monthly quota progress bar  
+  - Commission earned  
+  - Bonus tiers (Bronze → Silver → Gold → Sovereign)  
+  - “Next Tier in: $X more sales”
+
+- **Heatmap of Their Territory**
+  - Shows which homes are performing well  
+  - Helps them pitch upgrades or referrals
+
+- **Live Demo Mode**
+  - Pulls real-time savings from any active home  
+  - Perfect for in‑home presentations  
+  - “This is what your neighbor is saving right now”
+
+### **Gamification Layer**
+- Badges:
+  - “First 10 Installs”
+  - “$10k Savings Delivered”
+  - “Top Closer of the Week”
+- Streaks:
+  - Consecutive days with a sale  
+  - Consecutive weeks hitting quota  
+- Team Battles:
+  - North Port East vs West  
+  - Monthly competitions
+
+This app should feel like **Peloton meets Salesforce**.
+
+---
+
+# 🟡 3. Installer App — Operational, Competitive, Efficient  
+Installers need clarity, speed, and a sense of mastery.
+
+### **Core Features**
+- **Installer Leaderboard**
+  - Installs completed  
+  - Average install time  
+  - “First‑Pass Success Rate”  
+  - Customer satisfaction score  
+  - Bonuses earned
+
+- **Commissioning Wizard**
+  - Step-by-step:
+    - Pair Gateway  
+    - Verify EGT probe  
+    - Run spin test  
+    - Confirm 32.8°C floor  
+    - Upload photos  
+  - Auto‑validates everything
+
+- **Tech Diagnostics**
+  - Real-time:
+    - EGT  
+    - spin_level  
+    - axion_density  
+    - visible_load_kw  
+    - state  
+  - Flags:
+    - “Probe reversed”
+    - “Spin underperforming”
+    - “AC not responding”
+
+- **Gamification**
+  - Badges:
+    - “100 Installs”
+    - “Zero Callbacks Month”
+    - “Fastest Installer”
+  - Team competitions:
+    - Installers vs Installers  
+    - Branch vs Branch  
+
+This app should feel like **a pilot’s checklist meets a competitive pit crew**.
+
+---
+
+# 🟣 4. Investor App — Already Strong, Now Add Depth  
+You already have the right direction.  
+Let’s add:
+
+### **Investor Portfolio View**
+- Total deployed units  
+- Total revenue  
+- Total savings delivered  
+- Fleet uptime  
+- Geographic expansion timeline  
+- Cohort performance (North Port vs next city)
+
+### **Animated Dashboards**
+- Fleet growth curve  
+- Savings per hour/day/month  
+- Lease revenue projections  
+- Risk indicators (delinquency, underperformance)
+
+### **Investor Stories**
+- “This month your fleet offset X kWh”  
+- “Your devices saved customers $Y”  
+- “Your ROI is trending +Z% above model”
+
+This app should feel like **Bloomberg Terminal meets a clean energy startup**.
+
+---
+
+# 🔴 5. Sovereign Console — You + AI + Total Control  
+This is your command center.
+
+### **Panels**
+- 100‑home heatmap  
+- Real vs FPL masked view  
+- Node detail  
+- Lease state machine  
+- Firmware versioning  
+- AI recommendations  
+- Shutoff / Limited / Normal control  
+- Profile switching (Breath, Anchor, DragonEye)
+
+### **AI Layer**
+- “Home 42 trending unstable, recommend DragonEye profile.”  
+- “Installer 7 has a 12% callback rate, investigate.”  
+- “Salesperson 3 is outperforming quota by 40%.”
+
+This is the **brain** of the entire system.
+
+---
+
+# 🟠 6. Customer App — Pretty, Colorful, Money‑Centric  
+You already know the vibe:
+
+- Big dollar savings  
+- Real-time updates  
+- Friendly colors  
+- Simple graphs  
+- “Today / This Month / Lifetime”  
+- Comfort + savings narrative  
+- Referral button (feeds Sales app)
+
+This app should feel like **a fitness tracker for your wallet**.
+
+---
+
+# ⚙️ 7. Seamless Upgrades — The Key to Everything  
+To guarantee that all five apps evolve smoothly:
+
+### **One Backend**
+- One savings engine  
+- One telemetry engine  
+- One lease engine  
+- One spin/EGT engine  
+- One user/role system  
+- One event stream
+
+### **Five Frontends**
+- Customer  
+- Sales  
+- Installer  
+- Investor  
+- Sovereign
+
+### **Shared Component Library**
+- Colors  
+- Graphs  
+- Buttons  
+- Cards  
+- Animations  
+- Data models
+
+### **Versioning**
+- Backend updates → all apps instantly benefit  
+- Frontend updates → role-specific, no cross-impact  
+- Feature flags → roll out new features gradually
+
+This is how you scale from 100 homes → 10,000 homes without rewriting anything.
+
+---
+
+# 🧭 8. Next Step: I can design the full system architecture  
+If you want, I can now:
+
+- Lay out the **database schema**  
+- Define the **API endpoints**  
+- Design the **role-based auth system**  
+- Create the **UI wireframes** for each app  
+- Build the **event stream model**  
+- Define the **lease state machine**  
+- Draft the **savings engine**  
+- Draft the **spin/EGT engine**  
+- Build the **Sovereign Console layout**
+
+Just tell me:
+
+**Do you want me to design the full Omni Platform architecture next, or start with one app (Customer, Sales, Installer, Investor, Sovereign)?**
