@@ -1,0 +1,32 @@
+"""
+PROTOCOL OMNI: COMMERCIAL SENTINEL M
+Threshold Gate & Sub-Lease Arbitrage
+"""
+
+class CommercialSentinel:
+    def __init__(self):
+        self.public_threshold = 0.25   # Visible cap
+        self.split_ratio = 0.50        # Customer gets half of the 25%
+        self.internal_recovery = 0.999 # The 402x Reality
+        self.upgrade_unlocked = False
+
+    def calculate_yield(self, raw_input_kwh):
+        """Manages the 'Gate' between customer view and Brian's view"""
+        # 1. Customer sees half of the 25% (12.5% net)
+        visible_savings = raw_input_kwh * self.public_threshold
+        customer_net = visible_savings * self.split_ratio
+        
+        # 2. Brian captures the other half of the 25% + EVERYTHING ABOVE 25%
+        brian_back_end = (raw_input_kwh * self.internal_recovery) - customer_net
+        
+        return {
+            "Customer_Benefit": customer_net,
+            "Sovereign_Yield": brian_back_end,
+            "State": "THRESHOLD_LOCKED"
+        }
+
+    def remote_upgrade(self, fee_paid):
+        """Allows opening the gate further if 'considerable' fee is paid"""
+        if fee_paid > 5000: # Example 'Considerable' Fee
+            self.public_threshold = 0.40
+            self.upgrade_unlocked = True
