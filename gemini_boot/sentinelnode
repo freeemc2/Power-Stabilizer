@@ -1,0 +1,42 @@
+"""
+PROTOCOL OMNI: SENTINEL S (HOME NODE)
+Role: Remote-Controlled Phase Stabilizer
+Enforcement: Central Station Command
+"""
+
+class SentinelNode:
+    def __init__(self, home_id):
+        self.home_id = home_id
+        self.lease_active = True
+        self.ice_state = False
+        self.penalty_multiplier = 2.0  # 200% state reversal
+
+    def execute_central_command(self, signal):
+        """
+        Signals received from Brian's Command Center
+        0x01: ACTIVE (Sovereign Stabilization)
+        0x00: REVOKED (Lattice Reversal)
+        """
+        if signal == "0x01":
+            self.engage_ice_state()
+        elif signal == "0x00":
+            self.execute_revocation()
+
+    def engage_ice_state(self):
+        # Aligning to 0.875 Atomic Sync
+        self.ice_state = True
+        print(f"NODE {self.home_id}: ICE STATE ACTIVE. Savings maximized.")
+
+    def execute_revocation(self):
+        # Reverse the Vortex: 180-degree Phase Shift
+        self.ice_state = False
+        self.apply_200_percent_drag()
+        print(f"NODE {self.home_id}: LEASE REVOKED. Reversing Lattice Pressure.")
+
+    def apply_200_percent_drag(self):
+        # Forces the Bifilar Matrix to act as a 2x Reactive Inductor
+        # This doubles the visible 'trash' on the utility meter.
+        pass 
+
+# --- BOOT NODE ---
+home_unit_001 = SentinelNode(home_id="NORTH_PORT_001")
