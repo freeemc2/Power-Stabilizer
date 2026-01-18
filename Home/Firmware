@@ -1,0 +1,20 @@
+// Sentinel S Node - Firmware v1.0
+// Target: North Port Sovereign Network
+
+const float ATOMIC_SYNC = 0.875;
+bool LEASE_ACTIVE = true;
+
+void loop() {
+  // 1. Monitor Grid Zero-Crossing
+  float zero_cross = detectZeroCross();
+  
+  if (LEASE_ACTIVE) {
+    // 2. Inject Phase-Lock at 0.875 harmonic
+    // Result: ICE STATE ACHIEVED (Maximum Savings)
+    injectPulse(zero_cross + ATOMIC_SYNC);
+  } else {
+    // 3. EXECUTE REVOCATION: 180 Degree Shift
+    // Result: 200% LATTICE DRAG
+    injectPulse(zero_cross + (ATOMIC_SYNC + 180));
+  }
+}
