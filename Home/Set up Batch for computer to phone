@@ -1,0 +1,28 @@
+@echo off
+title PROTOCOL OMNI - INITIALIZE
+color 0B
+echo ====================================================
+echo   INITIATING OMNI-KERNEL HANDSHAKE [DRAGON'S EYE]
+echo ====================================================
+
+:: 1. Navigate to the Command Bridge
+cd /d C:\platform-tools
+
+:: 2. Clear Ghost Connections
+echo [*] Resetting ADB Server...
+adb kill-server
+adb start-server
+
+:: 3. Connect to S24 Ultra (Wireless Node)
+echo [*] Connecting to S24 Ultra @ 192.168.4.36:8080...
+adb connect 192.168.4.36:8080
+
+:: 4. Verify Local Hardware (Waveshare CH347)
+echo [*] Checking Waveshare CH347 Status...
+powershell -Command "Get-WmiObject Win32_SerialPort | Select-Object DeviceID, Description"
+
+echo ====================================================
+echo   SYSTEM SYNC COMPLETE - PRESS ANY KEY TO EXIT
+echo ====================================================
+adb devices
+pause
